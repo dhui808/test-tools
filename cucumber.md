@@ -24,3 +24,21 @@
 	  When the user enters an incorrect username and password
 	  And clicks the "Login" button
 	  Then an error message should be displayed that says "Incorrect username or password."
+
+### How Cucumber interact with applications?
+	Cucumber interacts with applications by executing the steps defined in the Cucumber scripts and comparing the 
+	actual behavior of the application to the expected behavior specified in the scripts.
+
+	Each step in a Cucumber script maps to a step definition, which is a piece of code that implements the behavior 
+	described by the step. The step definitions interact with the application under test by calling its APIs, 
+	clicking buttons, filling in forms, and so on.
+
+	To implement the step definitions, you will typically use a testing library such as Ruby's RSpec, Java's JUnit, 
+	or JavaScript's Mocha. These libraries provide the tools and assertions that you need to verify that the 
+	application behaves as expected.
+
+	When you run a Cucumber script, Cucumber will execute each step in the script and call the corresponding step 
+	definition. If the step definition successfully executes and the actual behavior of the application matches the 
+	expected behavior, the step is marked as passed. If the step definition fails or the actual behavior does not 
+	match the expected behavior, the step is marked as failed and a failure message is generated.
+	
